@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import FeaturedContent from './components/organisms/featured-content'
+import Footer from './components/organisms/footer'
+import Form from './components/organisms/form'
+import Header from './components/organisms/header'
+import HeroBanner from './components/organisms/hero-banner'
+import Reviews from './components/organisms/reviews'
+import WhySnubes from './components/organisms/why-snubes'
+import { StyledMainBanner } from './components/atoms/StyledComponents'
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <Header />
+      <StyledMainBanner>
+        <Form />
+        <HeroBanner />
+      </StyledMainBanner>
+      <FeaturedContent />
+      <WhySnubes />
+      <Reviews />
+      <Footer />
+    </>
+  )
 }
 
-export default App;
+export default App
