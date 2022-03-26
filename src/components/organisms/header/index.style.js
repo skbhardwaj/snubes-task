@@ -10,7 +10,7 @@ export const HeaderContainer = styled.header`
   justify-content: space-between;
   align-items: center;
 
-  @media ${DEVICE.desktop} {
+  @media ${DEVICE.laptop} {
     padding: 1.5rem;
     justify-content: space-evenly;
   }
@@ -19,7 +19,7 @@ export const HeaderContainer = styled.header`
 export const StyledNavBar = styled.nav`
   display: none;
 
-  @media ${DEVICE.desktop} {
+  @media ${DEVICE.laptop} {
     display: inline-block;
   }
 `
@@ -41,18 +41,16 @@ export const StyledNavLink = styled.a`
 
 export const StyledLogo = styled.div`
   max-width: 6.4rem;
-  /* display: inline-block; */
 
-  @media ${DEVICE.desktop} {
+  @media ${DEVICE.laptop} {
     max-width: 10rem;
-    /* display: inline-block; */
   }
 `
 
 export const StyledA = styled.a``
 
 export const StyledMenuLink = styled.a`
-  @media ${DEVICE.desktop} {
+  @media ${DEVICE.laptop} {
     display: none;
   }
 `
